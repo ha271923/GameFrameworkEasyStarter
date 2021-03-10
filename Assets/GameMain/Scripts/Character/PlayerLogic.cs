@@ -13,7 +13,7 @@ namespace GameMain
         /// <summary>
         /// Player有限状态机接口
         /// </summary>
-        private GameFramework.Fsm.IFsm<PlayerLogic> m_PlayerFsm;
+        private GameFramework.Fsm.IFsm<PlayerLogic> m_PlayerFsm;  // Stack<Integer> 這樣的寫法就是, 讓Integer class擁有Stack的API介面
 
         /// <summary>
         /// 玩家移动速度

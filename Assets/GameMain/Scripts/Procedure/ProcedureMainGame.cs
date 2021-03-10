@@ -45,7 +45,7 @@ namespace GameMain
             // 启用OpenUIFormSuccess
             GameEntry.Event.Subscribe(OpenUIFormSuccessEventArgs.EventId, OnOpenUIFormSuccess);
             // 加载MainGame场景
-            GameEntry.Scene.LoadScene("Assets/GameMain/Scenes/MainGame.unity", this);
+            GameEntry.Scene.LoadScene("Assets/GameMain/Scenes/MainGame.unity", this); // KEY: 一開始在GameMain.unity, 現在要轉進MainGame.unity(此場景才有MainCamera), 所以載入下個scene
 
             // 加载Player
             GameEntry.Entity.ShowEntity<PlayerLogic>(1, "Assets/GameMain/Entities/Characters/Prefabs/Player.prefab", "Player");
